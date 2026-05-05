@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+:root {
+  --cursor-accent: #ec4899;
+  --cursor-accent-channels: 236 72 153;
+}
+
 @theme inline {
   --font-sans: var(--font-lato), ui-sans-serif, system-ui, sans-serif;
 }

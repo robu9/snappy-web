@@ -3,6 +3,8 @@
 import { useCallback, useEffect, useState } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 
+const CURSOR_FOLLOW_OFFSET_X = 35;
+const CURSOR_FOLLOW_OFFSET_Y = 25;
 const spring = { damping: 28, stiffness: 320, mass: 0.35 };
 
 export function CustomCursor() {
@@ -14,8 +16,8 @@ export function CustomCursor() {
 
   const move = useCallback(
     (clientX: number, clientY: number) => {
-      x.set(clientX);
-      y.set(clientY);
+      x.set(clientX + CURSOR_FOLLOW_OFFSET_X);
+      y.set(clientY + CURSOR_FOLLOW_OFFSET_Y);
     },
     [x, y],
   );
@@ -43,20 +45,22 @@ export function CustomCursor() {
         willChange: "transform",
       }}
     >
-      <motion.div style={{ x: sx, y: sy, translateX: -4, translateY: -2 }}>
-        <svg
-          width="14"
-          height="16"
-          viewBox="0 0 12 14"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          style={{
-            filter:
-              "drop-shadow(0 0 6px rgba(59, 130, 246, 0.7)) drop-shadow(0 0 14px rgba(59, 130, 246, 0.4))",
-          }}
-        >
-          <path d="M1 1L11 7L1 13V1Z" fill="#3b82f6" />
-        </svg>
+      <motion.div style={{ x: sx, y: sy }}>
+        <div className="-translate-x-1/2 -translate-y-1/2">
+          <svg
+            width="14"
+            height="16"
+            viewBox="0 0 12 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            style={{
+              filter:
+                "drop-shadow(0 0 6px rgb(var(--cursor-accent-channels) / 0.75)) drop-shadow(0 0 14px rgb(var(--cursor-accent-channels) / 0.45))",
+            }}
+          >
+            <path d="M1 1L11 7L1 13V1Z" fill="var(--cursor-accent)" />
+          </svg>
+        </div>
       </motion.div>
     </div>
   );
