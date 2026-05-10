@@ -18,53 +18,29 @@ export function Navbar() {
 
   function onToggleTheme() {
     const nextTheme = theme === "light" ? "dark" : "light";
+
+
+    const rect = buttonRef.current?.getBoundingClientRect();
+    const x = rect ? rect.left + rect.width / 2 : window.innerWidth - 40;
+    const y = rect ? rect.top + rect.height / 2 : 40;
+
+    document.documentElement.style.setProperty("--x", `${x}px`);
+    document.documentElement.style.setProperty("--y", `${y}px`);
+
     const applyTheme = () => {
       setTheme(nextTheme);
       document.documentElement.setAttribute("data-theme", nextTheme);
       window.localStorage.setItem("theme", nextTheme);
     };
 
-    const rect = buttonRef.current?.getBoundingClientRect();
-    const x = rect ? rect.left + rect.width / 2 : window.innerWidth - 40;
-    const y = rect ? rect.top + rect.height / 2 : 40;
-
-    const maxX = Math.max(x, window.innerWidth - x);
-    const maxY = Math.max(y, window.innerHeight - y);
-    const endRadius = Math.hypot(maxX, maxY);
-    const wave = document.createElement("span");
-
-    wave.style.position = "fixed";
-    wave.style.left = `${x}px`;
-    wave.style.top = `${y}px`;
-    wave.style.width = "18px";
-    wave.style.height = "18px";
-    wave.style.borderRadius = "9999px";
-    wave.style.pointerEvents = "none";
-    wave.style.transform = "translate(-50%, -50%) scale(0)";
-    wave.style.transformOrigin = "center";
-    wave.style.zIndex = "9999";
-    wave.style.background = "transparent";
-    wave.style.border = `3px solid ${
-      theme === "light" ? "#111111" : "#ffffff"
-    }`;
-    wave.style.opacity = "0.95";
-    wave.style.transition =
-      "transform 1300ms cubic-bezier(0.22, 1, 0.36, 1), opacity 1300ms cubic-bezier(0.22, 1, 0.36, 1)";
-
-    document.body.appendChild(wave);
-
-    requestAnimationFrame(() => {
-      wave.style.transform = `translate(-50%, -50%) scale(${endRadius / 9})`;
-      wave.style.opacity = "0";
-    });
-
-    window.setTimeout(() => {
+    if (!(document as any).startViewTransition) {
       applyTheme();
-    }, 90);
+      return;
+    }
 
-    window.setTimeout(() => {
-      wave.remove();
-    }, 1350);
+    (document as any).startViewTransition(() => {
+      applyTheme();
+    });
   }
 
   return (
