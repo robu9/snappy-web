@@ -12,8 +12,8 @@ export function FeaturesSection() {
     >
       snappy sits right next to your cursor and sees everything you see. ask a
       question out loud and it walks you through whatever you&apos;re working
-      on. or say &ldquo;snappy agent&rdquo; and it&apos;ll spin up an agent to
-      build, research, or do whatever for you in the background.
+      on. or spawn an agent to build, research, or do whatever for you in the
+      background.
     </motion.p>
   );
 }
