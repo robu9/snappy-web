@@ -1,8 +1,8 @@
 version: 1.0.1
 files:
-  - url: https://heysnappy.tech/api/download
+  - url: Snappy Setup 1.0.1.exe
     sha512: UK2DehSz8RJjq58fPJtd9XqHPtsJ9d/1nsmCb+hOfAJT5FSlMhlIlI8sZ2t+J4Lh7Ce3E0raX8OoyMmnmBlKXw==
     size: 122771158
-path: https://heysnappy.tech/api/download
+path: Snappy Setup 1.0.1.exe
 sha512: UK2DehSz8RJjq58fPJtd9XqHPtsJ9d/1nsmCb+hOfAJT5FSlMhlIlI8sZ2t+J4Lh7Ce3E0raX8OoyMmnmBlKXw==
 releaseDate: '2026-05-10T12:56:48.910Z'
