@@ -18,6 +18,8 @@
 }
 
 html[data-theme="dark"] {
+  --cursor-accent: #a3e635;
+  --cursor-accent-channels: 163 230 53;
   --bg: #0d0d0f;
   --fg: #f4f4f5;
   --muted: #a1a1aa;
