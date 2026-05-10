@@ -68,18 +68,6 @@ export function CTASection() {
             )}
           </AnimatePresence>
         </button>
-
-        <p className="mt-4 text-[13px] tracking-[-0.3px] text-[var(--muted-2)]">
-          on mac?{" "}
-          <a
-            href="/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline underline-offset-2 transition-colors hover:text-[var(--fg)]"
-          >
-            join the waitlist
-          </a>
-        </p>
       </div>
     </motion.div>
   );

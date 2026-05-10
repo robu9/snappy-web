@@ -3,6 +3,14 @@ import Link from "next/link";
 export function Footer() {
   return (
     <footer className="pb-8 text-center">
+      <p className="mb-2 text-[13px] tracking-[-0.3px] text-[var(--muted)]">
+        <Link
+          className="underline underline-offset-2 transition-colors hover:text-[var(--fg)]"
+          href="/privacy"
+        >
+          privacy
+        </Link>
+      </p>
       <p className="text-[13px] tracking-[-0.3px] text-[var(--muted)]">
         made by{" "}
         <a
@@ -14,14 +22,6 @@ export function Footer() {
           @codewithrobu
         </a>{" "}
         &lt;3
-      </p>
-      <p className="mt-2 text-[13px] tracking-[-0.3px] text-[var(--muted)]">
-        <Link
-          className="underline underline-offset-2 transition-colors hover:text-[var(--fg)]"
-          href="/privacy"
-        >
-          privacy
-        </Link>
       </p>
     </footer>
   );
