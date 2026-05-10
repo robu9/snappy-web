@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Lato } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 
-const lato = Lato({
+const manrope = Manrope({
   subsets: ["latin"],
-  weight: ["400", "700", "900"],
-  variable: "--font-lato",
+  weight: ["400", "500", "700", "800"],
+  variable: "--font-manrope",
   display: "swap",
 });
 
@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${lato.variable} font-sans antialiased`}>
+      <body className={`${manrope.variable} font-sans antialiased`}>
         {children}
       </body>
     </html>

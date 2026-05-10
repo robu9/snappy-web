@@ -3,8 +3,39 @@
 :root {
   --cursor-accent: #ec4899;
   --cursor-accent-channels: 236 72 153;
+  --bg: #ffffff;
+  --fg: #111111;
+  --muted: #888888;
+  --muted-2: #aaaaaa;
+  --card-border: #f0f0f0;
+  --card-bg: #fafafa;
+  --cta-bg: #111111;
+  --cta-fg: #ffffff;
 }
 
 @theme inline {
-  --font-sans: var(--font-lato), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+}
+
+html[data-theme="dark"] {
+  --bg: #0d0d0f;
+  --fg: #f4f4f5;
+  --muted: #a1a1aa;
+  --muted-2: #71717a;
+  --card-border: #26262b;
+  --card-bg: #17171c;
+  --cta-bg: #ffffff;
+  --cta-fg: #111111;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+  pointer-events: none;
 }

@@ -28,7 +28,7 @@ export function CTASection() {
           type="button"
           disabled={downloading}
           onClick={onDownloadClick}
-          className="inline-flex items-center justify-center gap-2.5 rounded-md border-none bg-black px-8 py-4 text-[15px] font-bold tracking-[-0.3px] text-white transition-opacity duration-300 enabled:cursor-pointer enabled:opacity-100 disabled:cursor-default disabled:opacity-60"
+          className="inline-flex items-center justify-center gap-2.5 rounded-md border border-[var(--card-border)] bg-[var(--cta-bg)] px-8 py-4 text-[15px] font-bold tracking-[-0.3px] text-[var(--cta-fg)] transition-opacity duration-300 enabled:cursor-pointer enabled:opacity-100 disabled:cursor-default disabled:opacity-60"
         >
           <AnimatePresence mode="wait" initial={false}>
             {downloading ? (
@@ -69,13 +69,13 @@ export function CTASection() {
           </AnimatePresence>
         </button>
 
-        <p className="mt-4 text-[13px] tracking-[-0.3px] text-[#aaaaaa]">
+        <p className="mt-4 text-[13px] tracking-[-0.3px] text-[var(--muted-2)]">
           on mac?{" "}
           <a
             href="/"
             target="_blank"
             rel="noopener noreferrer"
-            className="underline underline-offset-2 transition-colors hover:text-black"
+            className="underline underline-offset-2 transition-colors hover:text-[var(--fg)]"
           >
             join the waitlist
           </a>

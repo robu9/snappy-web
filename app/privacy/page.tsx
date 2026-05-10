@@ -9,17 +9,17 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <div className="min-h-screen bg-white px-6 py-16 text-[15px] leading-[1.65] tracking-[-0.3px] text-[#444444] sm:py-20">
+    <div className="min-h-screen bg-[var(--bg)] px-6 py-16 text-[15px] leading-[1.65] tracking-[-0.3px] text-[var(--muted)] sm:py-20">
       <article className="mx-auto max-w-[640px]">
-        <h1 className="mb-2 text-center text-[28px] font-black tracking-[-1px] text-black sm:text-[34px]">
+        <h1 className="mb-2 text-center text-[28px] font-black tracking-[-1px] text-[var(--fg)] sm:text-[34px]">
           Privacy policy
         </h1>
-        <p className="mb-12 text-center text-[13px] text-[#888888]">
+        <p className="mb-12 text-center text-[13px] text-[var(--muted)]">
           Last updated: May 2, 2026
         </p>
 
         <section className="mb-10">
-          <h2 className="mb-3 text-[17px] font-bold text-black">
+          <h2 className="mb-3 text-[17px] font-bold text-[var(--fg)]">
             1. What this covers
           </h2>
           <p>
@@ -31,7 +31,7 @@ export default function PrivacyPage() {
         </section>
 
         <section className="mb-10">
-          <h2 className="mb-3 text-[17px] font-bold text-black">
+          <h2 className="mb-3 text-[17px] font-bold text-[var(--fg)]">
             2. Information we collect
           </h2>
           <p className="mb-3">
@@ -39,18 +39,18 @@ export default function PrivacyPage() {
           </p>
           <ul className="list-disc space-y-2 pl-5">
             <li>
-              <span className="text-black">Account and contact data</span> you
+              <span className="text-[var(--fg)]">Account and contact data</span> you
               provide (for example, email or name) when you sign up, join a
               waitlist, or contact us.
             </li>
             <li>
-              <span className="text-black">Usage and device data</span> such as
+              <span className="text-[var(--fg)]">Usage and device data</span> such as
               app or site interactions, diagnostics, crash reports, and general
               technical information (OS version, approximate location from IP,
               timestamps).
             </li>
             <li>
-              <span className="text-black">Content you submit</span> to the AI
+              <span className="text-[var(--fg)]">Content you submit</span> to the AI
               features (for example, prompts, audio when using voice, or screen
               context the product is designed to access)—so we can provide
               answers and improve reliability and safety.
@@ -59,7 +59,7 @@ export default function PrivacyPage() {
         </section>
 
         <section className="mb-10">
-          <h2 className="mb-3 text-[17px] font-bold text-black">
+          <h2 className="mb-3 text-[17px] font-bold text-[var(--fg)]">
             3. How we use information
           </h2>
           <p className="mb-3">We use the information above to:</p>
@@ -75,7 +75,7 @@ export default function PrivacyPage() {
         </section>
 
         <section className="mb-10">
-          <h2 className="mb-3 text-[17px] font-bold text-black">
+          <h2 className="mb-3 text-[17px] font-bold text-[var(--fg)]">
             4. Sharing
           </h2>
           <p>
@@ -88,7 +88,7 @@ export default function PrivacyPage() {
         </section>
 
         <section className="mb-10">
-          <h2 className="mb-3 text-[17px] font-bold text-black">
+          <h2 className="mb-3 text-[17px] font-bold text-[var(--fg)]">
             5. Retention and security
           </h2>
           <p>
@@ -100,7 +100,7 @@ export default function PrivacyPage() {
         </section>
 
         <section className="mb-10">
-          <h2 className="mb-3 text-[17px] font-bold text-black">
+          <h2 className="mb-3 text-[17px] font-bold text-[var(--fg)]">
             6. Your choices and rights
           </h2>
           <p>
@@ -112,7 +112,7 @@ export default function PrivacyPage() {
         </section>
 
         <section className="mb-10">
-          <h2 className="mb-3 text-[17px] font-bold text-black">
+          <h2 className="mb-3 text-[17px] font-bold text-[var(--fg)]">
             7. Children
           </h2>
           <p>
@@ -122,7 +122,7 @@ export default function PrivacyPage() {
         </section>
 
         <section className="mb-10">
-          <h2 className="mb-3 text-[17px] font-bold text-black">
+          <h2 className="mb-3 text-[17px] font-bold text-[var(--fg)]">
             8. International users
           </h2>
           <p>
@@ -133,7 +133,7 @@ export default function PrivacyPage() {
         </section>
 
         <section className="mb-12">
-          <h2 className="mb-3 text-[17px] font-bold text-black">
+          <h2 className="mb-3 text-[17px] font-bold text-[var(--fg)]">
             9. Changes and contact
           </h2>
           <p className="mb-3">
@@ -144,7 +144,7 @@ export default function PrivacyPage() {
             Questions? Reach out on{" "}
             <a
               href="https://x.com/codewithrobu"
-              className="text-black underline underline-offset-2 transition-colors hover:text-[#888888]"
+              className="text-[var(--fg)] underline underline-offset-2 transition-colors hover:text-[var(--muted)]"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -157,7 +157,7 @@ export default function PrivacyPage() {
         <p className="text-center">
           <Link
             href="/"
-            className="text-[13px] text-[#888888] underline underline-offset-2 transition-colors hover:text-black"
+            className="text-[13px] text-[var(--muted)] underline underline-offset-2 transition-colors hover:text-[var(--fg)]"
           >
             Back home
           </Link>
