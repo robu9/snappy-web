@@ -10,8 +10,8 @@ export default function Home() {
     <>
       <CustomCursor />
       <Navbar />
-      <div className="min-h-screen bg-[var(--bg)]">
-        <article className="pb-24 pt-20 text-center sm:pt-28">
+      <div className="flex min-h-dvh flex-col bg-[var(--bg)]">
+        <article className="flex flex-1 flex-col pb-8 pt-20 text-center sm:pt-28">
           <div className="mx-auto max-w-[800px] px-6">
             <HeroSection />
             <FeaturesSection />
