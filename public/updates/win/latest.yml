@@ -1,8 +1,8 @@
 version: 1.0.0
 files:
-  - url: Snappy Setup 1.0.0.exe
-    sha512: Acx2flVFy19KvB/iVnBnzVLQMKtWMTHfil6KU96YjNEeC9anQZfLoRGpF7st9YuPhMEfZaUh+aORFg9pvZ1Dew==
-    size: 121341289
-path: Snappy Setup 1.0.0.exe
-sha512: Acx2flVFy19KvB/iVnBnzVLQMKtWMTHfil6KU96YjNEeC9anQZfLoRGpF7st9YuPhMEfZaUh+aORFg9pvZ1Dew==
-releaseDate: '2026-05-09T11:23:28.182Z'
+  - url: https://github.com/robu9/snappy-web/releases/download/v1.0.0/Snappy%20Setup%201.0.0.exe
+    sha512: 3sIlmnTyc0pykuMaZqUzDHfCRoLN/ELd8hn1kY9ajJ4PA7psljqmG9zhtxHvuGBzOrQMaGSSvlo4q+ko1igWLA==
+    size: 122770303
+path: https://github.com/robu9/snappy-web/releases/download/v1.0.0/Snappy%20Setup%201.0.0.exe
+sha512: 3sIlmnTyc0pykuMaZqUzDHfCRoLN/ELd8hn1kY9ajJ4PA7psljqmG9zhtxHvuGBzOrQMaGSSvlo4q+ko1igWLA==
+releaseDate: '2026-05-10T11:56:48.935Z'
