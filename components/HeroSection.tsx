@@ -18,13 +18,11 @@ export function HeroSection() {
         meet snappy
       </motion.p>
       <motion.h1
-        className="mb-5 text-[44px] font-black leading-[1.05] tracking-[-2.2px] text-[var(--fg)] sm:text-[64px]"
+        className="mx-auto mb-5 max-w-[17ch] text-[44px] font-black leading-[1.05] tracking-[-2.2px] text-[var(--fg)] sm:text-[64px]"
         {...fadeUp}
         transition={{ duration: 0.5, delay: 0.04, ease: [0.22, 1, 0.36, 1] }}
       >
-        an ai buddy that lives
-        <br />
-        on your pc.
+        an ai just a snap away from your pc.
       </motion.h1>
     </>
   );
