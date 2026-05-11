@@ -10,7 +10,7 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: "snappy - an ai buddy that lives on your mac",
+  title: "snappy",
   description:
     "it sits right next to your cursor, sees your screen, and listens when you talk. like a friend who's really good at everything.",
 };
