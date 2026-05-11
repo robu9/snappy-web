@@ -22,7 +22,7 @@ export function HeroSection() {
         {...fadeUp}
         transition={{ duration: 0.5, delay: 0.04, ease: [0.22, 1, 0.36, 1] }}
       >
-        an ai just a snap away from your pc.
+        an ai that lives on your desktop.
       </motion.h1>
     </>
   );

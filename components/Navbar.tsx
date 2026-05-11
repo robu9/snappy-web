@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 
 export function Navbar() {
-  const [theme, setTheme] = useState<"light" | "dark">("light");
+  const [theme, setTheme] = useState<"light" | "dark">("dark");
   const buttonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
@@ -12,7 +12,8 @@ export function Navbar() {
       setTheme(savedTheme);
       document.documentElement.setAttribute("data-theme", savedTheme);
     } else {
-      document.documentElement.setAttribute("data-theme", "light");
+      setTheme("dark");
+      document.documentElement.setAttribute("data-theme", "dark");
     }
   }, []);
 

@@ -10,10 +10,9 @@ export function FeaturesSection() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
     >
-      snappy sits right next to your cursor and sees everything you see. ask a
-      question out loud and it walks you through whatever you&apos;re working
-      on. or spawn an agent to build, research, or do whatever for you in the
-      background.
+      snappy lives right by your cursor, seeing exactly what you see. ask a
+      question out loud for an instant, real time walkthrough or deploy agents
+      to build, research or anything you want, it executes for you in the background.
     </motion.p>
   );
 }
