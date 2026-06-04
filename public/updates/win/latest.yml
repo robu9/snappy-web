@@ -1,8 +1,8 @@
 version: 2.0.1
 files:
   - url: Snappy Setup 2.0.1.exe
-    sha512: gHfhyFmq5ZCyoGq8nuhk9HdU2c6tZK2EQkF9kOHEsEleWDBliapMu+3F76RMGaB/Iw5FoAlSdceQGyEO80wkFQ==
-    size: 123949068
+    sha512: zEcaNTwwGjCbud2nXnP3jlo5VpQVJjxk6EnZL1qeS7ZhwcO48WsRslaCT+YV9uowJcjaU0hbcfpNf14FEnVbTA==
+    size: 123949712
 path: Snappy Setup 2.0.1.exe
-sha512: gHfhyFmq5ZCyoGq8nuhk9HdU2c6tZK2EQkF9kOHEsEleWDBliapMu+3F76RMGaB/Iw5FoAlSdceQGyEO80wkFQ==
-releaseDate: '2026-06-04T08:04:48.564Z'
+sha512: zEcaNTwwGjCbud2nXnP3jlo5VpQVJjxk6EnZL1qeS7ZhwcO48WsRslaCT+YV9uowJcjaU0hbcfpNf14FEnVbTA==
+releaseDate: '2026-06-04T12:15:16.229Z'
